@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"">
+    <title>Spotify Clone</title>
+</head>
+<body>
+    <!-- SIDE BAR -->
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="sidebar__logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class="sidebar__menu">
+                <a class="sidebar__menu__selecionar" href="#"><i class="fas fa-home"></i>Inicio</a>
+                <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <a href="#"><i class="fas fa-database"></i>Biblioteca</a>
+            </div>
+
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__item__componente">
+                        <span style="font-size: 22px;">+</span>
+                    </div>
+                    <span>Criar Playlist</span>
+                </div>
+                <div class="sidebar__menu__item">
+                    <img src="img/coracao.png" alt="">
+                    <span>Musicas curtidas</span>
+                </div>
+            </div>
+            
+                <div class="sidebar__playlists">
+                    <a href="#">Playlist 1</a>
+                    <a href="#">Playlist 2</a>
+                    <a href="#">Playlist 3</a>
+                    <a href="#">Playlist 4</a>
+                </div>
+
+                <div class="sidebar__playlists">
+                    <a href="#">Playlist 1</a>
+                    <a href="#">Playlist 2</a>
+                    <a href="#">Playlist 3</a>
+                    <a href="#">Playlist 4</a>
+                </div>
+
+                <div class="sidebar__playlists">
+                    <a href="#">Playlist 1</a>
+                    <a href="#">Playlist 2</a>
+                    <a href="#">Playlist 3</a>
+                    <a href="#">Playlist 4</a>
+                </div>
+            
+        </div>
+    </div>
+
+    <!-- PARTE PRINCIPAL -->
+
+    <div class="main">
+        <div class="main-wrapper">
+
+            <div class="main__row">
+            <div class="main__row__title"><h2>Paradas</h2></div>
+
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir globalmente!</p>
+            </div>
+
+            <div class="main__col">
+                <img src="img/50br.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO Brasil</h3>
+                 <p>Venha curtir Nacionalmente!</p>
+            </div>
+
+            <div class="main__col">
+                <img src="img/bobdylan.jpg" alt="">
+                 <h3>This is Bob Dylan</h3>
+                 <p>Venha curtir !</p>
+            </div>
+
+            <div class="main__col">
+                <img src="img/zeca.jpg" alt="">
+                 <h3>This is Zeca Pagodinho</h3>
+                 <p>Venha curtir !</p>
+            </div>
+
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir !</p>
+            </div>
+
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir !</p>
+            </div>
+        
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir !</p>
+            </div>
+        
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir !</p>
+            </div>
+        
+            <div class="main__col">
+                <img src="img/50g.jpg" alt="">
+                 <h3>50 MAIS TOCADAS NO MUNDO</h3>
+                 <p>Venha curtir !</p>
+            </div>   
+            
+            </div>
+
+            <div class="main__row">
+                <div class="main__row__title"><h2>Albuns Favoritos</h2></div>
+    
+                <div class="main__col" data-image="img/RHCP.png" data-artist="Red Hot Chilli Peppers" 
+                data-song="Under the bridge" data-file="assets/Under_the_Bridge.mp3">
+                    <img src="img/RHCP.png" >
+                     <h3>Red Hot Chilli Peppers </h3>
+                     <p>Ouça umas das melhores </p>
+                </div>
+    
+                <div class="main__col" data-image="img/cityandcolor.jpg" data-artist="City and Colour" 
+                data-song="Wasted Love" data-file="assets/Wasted_Love.mp3">
+                    <img src="img/cityandcolor.jpg" alt="">
+                     <h3>City and Colour</h3>
+                     <p>Ouça umas das melhores </p>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player__artist">
+
+        </div>
+
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a style="display: none" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            
+            </div>
+            
+            <div class="player__control__progress">
+                <div style="width: 80%;" class="player__control__progress2"> </div>
+            </div>
+        </div>
+    </div> 
+
+    <audio id="audioplayer" style="position:absolute; top: 0; left: 0; 
+    z-index:-999; opacity: 0;" controls="">
+        
+    </audio>
+
+
+    <script src="app.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
